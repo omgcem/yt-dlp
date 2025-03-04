@@ -1,8 +1,8 @@
 from .common import InfoExtractor
 from ..utils import (
     float_or_none,
-    traverse_obj,
     parse_duration,
+    traverse_obj,
 )
 
 
