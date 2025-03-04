@@ -2,13 +2,14 @@ from .common import InfoExtractor
 from ..utils import (
     float_or_none,
     traverse_obj,
-    parse_duration
+    parse_duration,
 )
 
 
 class NiusIE(InfoExtractor):
     _VALID_URL = r'https?://(?:www\.)?nius\.de/episodes/.*/(?P<id>[a-z0-9\-]+)'
-    _TESTS = [{
+    _TESTS = [
+      {
         'url': 'https://www.nius.de/episodes/sarah-bosetti-grimme-preis-fuer-s-faktenverdrehen/1f3bd94c-aea8-43ff-aeda-52443cceef08',
         'md5': '79ff50e8f974365449d14adf255d82ce',
         'info_dict': {
@@ -20,7 +21,7 @@ class NiusIE(InfoExtractor):
             'duration': 840.00,
             'thumbnail': 'https://api.nius.de/api/assets/office-hr/06fae313-797a-4d17-85aa-5e5c06e6c837',
         },
-    }
+      },
     ]
 
     def _real_extract(self, url):

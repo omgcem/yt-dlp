@@ -1369,6 +1369,7 @@ from .ninenews import NineNewsIE
 from .ninenow import NineNowIE
 from .nintendo import NintendoIE
 from .nitter import NitterIE
+from .nius import NiusIE
 from .nobelprize import NobelPrizeIE
 from .noice import NoicePodcastIE
 from .nonktube import NonkTubeIE
@@ -2622,5 +2623,3 @@ from .zingmp3 import (
 )
 from .zoom import ZoomIE
 from .zype import ZypeIE
-
-from .nius import NiusIE
